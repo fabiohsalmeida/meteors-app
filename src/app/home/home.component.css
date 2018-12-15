@@ -1,4 +1,21 @@
-.main-banner img {
-    max-width: 100%;
-    height: auto;
+.acesso-rapido {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    border-bottom: 1px solid rgb(80, 30, 80);
+}
+
+.white-space {
+}
+
+.news {
+    max-width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.clipping img {
+    max-width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
 }

@@ -7,13 +7,17 @@
         <ul class="nav navbar-nav">
           <li class="active">
             <div class="dropdown">
-              <button class="dropbtn">INSTITUCIONAL</button>
+              <button class="dropbtn"><img class="header-icon" src="./assets/images/header/institucional.png"></button>
               <div class="dropdown-content">
                 <a href="#">Guia de Conduta</a>
+                <div class="dropdown-sub">
+                  <button class="dropbtn-sub">Organograma <span class="pull-right">></span></button>
+                  <div class="dropdown-sub-content">
+                    <a href="#">Getnet</a>
+                    <a href="#">Toque Fale</a>
+                  </div>
+                </div>
                 <a href="#">Painel Estratégico</a>
-                <a class="dropdown-submenu" href="#">teste</a>
-                <a href="#">Organograma Getnet</a>
-                <a href="#">Organograma Toque Fale</a>
                 <a href="#">Certificações</a>
                 <a href="#">Eventos e Mídias</a>
               </div>
@@ -30,9 +34,10 @@
                 <a href="#">Saber</a>
                 <a href="#">Portal de Metas</a>
                 <a href="#">Ciclo de Competências</a>
-                <a href="#">Processo Seletivo</a>
-                <a href="#">Movimentações Internas</a>
+                <a href="#">Vagas Internas</a>
+                <a href="#">Movimentações</a>
                 <a href="#">Bem-vindos</a>
+                <a href="#">Guia Inicial</a>
               </div>
             </div>
           </li>
@@ -40,8 +45,53 @@
             <div class="dropdown">
               <button class="dropbtn"><img class="header-icon" src="./assets/images/header/eficiencia.png"></button>
               <div class="dropdown-content">
-                <a href="#">Ferramentas</a>
-                <a href="#">Sites Úteis</a>
+                <a href="#">Indicadores</a>
+                <div class="dropdown-sub">
+                  <button class="dropbtn-sub">Ferramentas <span class="pull-right">></span></button>
+                  <div class="dropdown-sub-content">
+                    <a href="#">gympass</a>
+                    <a href="#">Aderência/WFO</a>
+                    <a href="#">Base 24</a>
+                    <a href="#">BI</a>
+                    <a href="#">Chat</a>
+                    <a href="#">Cisco - Cuic</a>
+                    <a href="#">Comprovantes</a>
+                    <a href="#">Confluence</a>
+                    <a href="#">Correio Web</a>
+                    <a href="#">CTF</a>
+                    <a href="#">É comigo Santander</a>
+                    <a href="#">Finesse</a>
+                    <a href="#">G2</a>
+                    <a href="#">Getconfig</a>
+                    <a href="#">Getnow</a>
+                    <a href="#">Getti</a>
+                    <a href="#">Jira</a>
+                    <a href="#">Minibi</a>
+                    <a href="#">Minitab</a>
+                    <a href="#">Mterm</a>
+                    <a href="#">Payware</a>
+                    <a href="#">Portal Auttar</a>
+                    <a href="#">Portal de Recarga</a>
+                    <a href="#">Portal do cliente - Santander</a>
+                    <a href="#">Qualitor</a>
+                    <a href="#">Reeskill</a>
+                    <a href="#">SGA</a>
+                    <a href="#">Siebel</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Verint</a>
+                  </div>
+                </div>
+                <div class="dropdown-sub">
+                  <button class="dropbtn-sub">Sites Úteis <span class="pull-right">></span></button>
+                  <div class="dropdown-sub-content">
+                    <a href="#">Correios</a>
+                    <a href="#">Reclame Aqui</a>
+                    <a href="#">Receita Federal - Consulta CNPJ</a>
+                    <a href="#">VR</a>
+                    <a href="#">Cobertura celular</a>
+                    <a href="#">Site Getnet</a>
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -49,7 +99,11 @@
             <div class="dropdown">
               <button class="dropbtn"><img class="header-icon" src="./assets/images/header/inovacao.png"></button>
               <div class="dropdown-content">
-                <a href="#">Projetos e Releasess</a>
+                <a href="#">GAPP</a>
+                <a href="#">Projetos</a>
+                <a href="#">Mesas Ágeis</a>
+                <a href="#">Sprint´s</a>
+                <a href="#">Releases</a>
               </div>
             </div>
           </li>
@@ -58,8 +112,9 @@
               <button class="dropbtn"><img class="header-icon" src="./assets/images/header/qualidade.png"></button>
               <div class="dropdown-content">
                 <a href="#">Estrutura por Processos</a>
-                <a href="#">Metodologias</a>
                 <a href="#">Plataforma de Normas</a>
+                <a href="#">Metodologias</a>
+                <a href="#">Melhorias de Processos</a>
               </div>
             </div>
           </li>
@@ -68,16 +123,24 @@
               <button class="dropbtn"><img class="header-icon" src="./assets/images/header/clientes.png"></button>
               <div class="dropdown-content">
                 <a href="#">Produtos e Serviços</a>
+                <a href="#">Programa Rota</a>
                 <a href="#">Grandes Contas</a>
+                <div class="dropdown-sub">
+                  <button class="dropbtn-sub">Portais <span class="pull-right">></span></button>
+                  <div class="dropdown-sub-content">
+                    <a href="#">Getnet</a>
+                    <a href="#">Santander</a>
+                  </div>
+                </div>
               </div>
             </div>
           </li>
         </ul>
-        <div class="pull-right">
-          <button class="dropbtn"><img class="header-icon-pesquisa" src="./assets/images/header/pesquisa.png"></button>
+        <div class="pull-right" style="display: block">
+          <app-header-search></app-header-search>
         </div>
-        <div class="pull-right">
-          <button class="dropbtn"><img class="header-icon" src="./assets/images/header/logo-getnet.png"></button>
+        <div class="pull-right" style="margin-top: 15px; margin-right: 5px;">
+          <a class="header-icon" [routerLink]="['/']" routerLinkActive="router-link-active" ><img src="./assets/images/header/logo-getnet1.png"></a>
         </div>
       </div>
     </div>
