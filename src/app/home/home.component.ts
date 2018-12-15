@@ -6,8 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  items: Array<any> = [];
 
-  constructor() { }
+  constructor() {
+    this.items = [
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" },
+      { name: "https://i.imgur.com/eQj9bAZ.jpg" }
+    ]
+  }
 
   ngOnInit() {
   }

@@ -30,7 +30,8 @@
               "./node_modules/admin-lte/plugins/iCheck/flat/red.css",
               "./src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
