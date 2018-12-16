@@ -1,0 +1,16 @@
+.btn-transparence {
+    background-color: transparent;
+    border: none;
+    margin-right: 3%;
+    padding: 5px;
+}
+
+.btn-changeable {
+    margin-left: 3%;
+    padding: 10px;
+}
+
+.btn-changeable:hover {
+    background-color: rgb(80, 30, 80);
+    border-radius: 25px;
+}

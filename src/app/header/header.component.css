@@ -1,20 +1,18 @@
 .header-div {
-    border-bottom: 2px solid red;
-    background: #fff;
-}
-
-.app-name {
-    color: #501e50
+    background: rgba(80, 30, 80, .4);
+    height: 86px;
+    vertical-align: middle;
 }
 
 .macro-menu {
     color: #501e50
 }
 
+/* Dropdown */
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color: white;
-    color: #501e50;
+    color: white;
+    background-color: transparent;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -31,8 +29,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -40,6 +37,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
+    background-color: rgba(241, 241, 241, .8);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -53,8 +51,59 @@
     display: block;
 }
 
+/* Sub */
+.dropbtn-sub {
+    color: black;
+    background-color: rgba(241, 241, 241, .8);;
+    padding: 12px 16px;
+    min-width: 180px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-sub {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-sub-content {
+    display: none;
+    position: absolute;
+    top: 1px;
+    left: 180px;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+/* Links inside the dropdown */
+.dropdown-sub-content a {
+    color: black;
+    background-color: rgba(241, 241, 241, .8);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-sub-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown-sub:hover .dropdown-sub-content {
+    display: block;
+}
+
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #ff0000;
+    background-color: rgba(255, 0, 0, .4);
     color: white;
+}
+
+/* Images */
+.header-icon-pesquisa {
+    margin-top: 10px;
 }
